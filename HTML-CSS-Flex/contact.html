@@ -1,0 +1,80 @@
+<!-- Début de la plage de configuration qui et utilisée dans toutes les pages d'un site web (Head) -->
+<!DOCTYPE html>
+<html lang="FR">    
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomPetals</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<!-- Fin de la plage de configuration (Head) -->
+
+<!-- Début du menu de navigation avec 4onglets et une barre de recherche -->
+   <!-- le terme "body" désigne le debut de la mise en page de notre site web -->
+<body>
+<header>
+    <nav class="menu-nav">
+        <a href="./index.html">Home</a>
+        <a href="./entreprise.html">Entreprise</a>
+        <a href="./realisations.html">Réalisations</a>
+        <a href="./contact.html">Contact</a>
+        <input type="search" name="q" placeholder="Rechercher" class="input" 
+        />
+    </nav>
+</header>
+
+<form>
+    <h1>Contactez-nous</h1>
+    <div class="separation"></div>
+            <label for="Monsieur" class="radio-inline">Monsieur</label>
+            <input type="radio" name="civilite" value="Monsieur" id="Monsieur"  />
+
+            <label for="Madame" class="radio-inline">Madame</label>
+            <input type="radio" name="civilite" value="Madame" id="Madame" />
+
+            <div class="corps-formulaire">
+            <div class="gauche">
+            <div class="groupe">
+
+            <label>Votre Nom&Prénom</label>
+          <input type="text" autocomplete="off" />
+          <i class="fas fa-user"></i>
+        </div>
+
+        <div class="groupe">
+          <label>Votre adresse postale</label>
+          <input type="text" autocomplete="off" />
+          <i class="fas fa-envelope"></i>
+        </div>
+
+        <div class="groupe">
+          <label>Votre téléphone</label>
+          <input type="text" autocomplete="off" />
+          <i class="fas fa-mobile"></i>
+        </div>
+
+          <div class="groupe">
+          <label>CGU</label>
+          <input type="checkbox" >
+          <i class="fas fa-mobile"></i>
+        </div>
+
+      </div>
+
+      <div class="droite">
+        <div class="groupe">
+          <label>Message</label>
+          <textarea placeholder="Saisissez ici..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="pied-formulaire" align="center">
+      <button>Envoyer le message</button>
+    </div>
+  </form>
+
+
+    
+<!-- Fin du menu de navigation -->

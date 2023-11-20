@@ -1,0 +1,234 @@
+
+@font-face {
+    font-family: 'Dancing' ;
+    src: url(./assets/Police/DancingScript-VariableFont_wght.ttf);
+}
+
+@media only screen {
+    
+
+
+/* Début de la mises en page */
+body{
+
+    background: beige;
+}
+/* Fin de la mises en page */
+
+/* barre de navigation*/
+nav.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    position:sticky;
+    list-style-type: none;
+    background-color: wheat;
+    border: 2px solid ;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
+nav.menu-nav a{
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+input{
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+/* Fin de la barre de navigation*/
+
+/* Introduction avec l'alignement du texte, et l'écriture*/
+h1{
+    font-family:'Dancing';
+    text-align: center;
+}
+
+div.page{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-align:center;
+}
+/* Fin de la parti introduction*/
+
+/* Début de la parti Entreprise */
+.info{
+    height: 140px;
+    width: 120px;
+    margin: 10px;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.box{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.box ul{
+    height: 160;
+    margin: 160px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between center;
+    padding: 0;
+}
+
+div.haut img{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.bas img{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.haut .image1{
+    width: 65%;
+    margin: 15%;
+    border: 50px;
+    border-radius: 50px;
+} 
+
+div.haut .image2{
+    width: 65%;
+    margin: 15%;
+    border: 50px;
+    border-radius: 50px;
+}
+
+div.haut .image3{
+    width: 65%;
+    margin: 15%;
+    border: 50px;
+    border-radius: 50px;
+}
+
+div.bas .image4{
+    width: 65%;
+    margin: 15%;
+    border: 50px;
+    border-radius: 50px;
+}
+
+div.bas .image5{
+    width: 65%;
+    margin: 15%;
+    border: 50px;
+    border-radius: 50px;
+}
+
+div.bas .image6{
+    width: 65%;
+    margin: 15%;
+    border: 50px;
+    border-radius: 50px;
+}
+
+div.haut h1{
+    margin-top: 15%;
+    text-align:center;
+}
+/* Fin de la parti Entreprise */
+
+/* Début de la parti Contact */  
+  form {
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  form h1 {
+    font-size: 20px;
+  }
+  form .separation {
+    width: 100%;
+    height: 1px;
+    background-color: #747cdf;
+  }
+  form .corps-formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  form .corps-formulaire .groupe {
+    position: relative; /* Pour mettre positionner l’élément dans le flux normal de la page */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  form .corps-formulaire .gauche .groupe input {
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9;
+    outline-color: #747cdf;
+    border-radius: 5px;
+  }
+  form .corps-formulaire .gauche .groupe i {
+    position: absolute; /* positionné par rapport à son parent le plus proche positionné */
+    left: 0;
+    top: 25px;
+    padding: 9px 8px;
+    color: #747cdf;
+  }
+  form .corps-formulaire .droite {
+    margin-left: 40px;
+  }
+  form .corps-formulaire .droite .groupe {
+    height: 100%;
+  }
+  form .corps-formulaire .droite .groupe textarea {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid #747cdf;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 72%;
+  }
+  form .pied-formulaire button {
+    margin-top: 10px;
+    background-color: #747cdf;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+  form .pied-formulaire button:hover {
+    transform: scale(1.05);
+  }
+  
+  @media screen and (max-width: 920px) {
+    form .corps-formulaire .droite {
+      margin-left: 0px;
+    }
+  }
+  /* FIN de la parti Contact */
+
+  /* Début de la parti Réalisations */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    font-size: 2em;
+    text-align: center;
+    grid-gap: 50px;
+    margin-bottom: 150px;
+    margin-top:100px ;
+    max-height: 300px;
+}
+
+img{
+    border: 0px solid;
+    border-radius: 10px;
+    width: 100%;
+}
+
+}
